@@ -16,7 +16,7 @@ public class SlientServerExampleWithoutCore {
 	public static void main(String[] args) {
 		// Set up the executor for both of the nodes
 		NodeMainExecutor nodeMainExecutor = DefaultNodeMainExecutor.newDefault();
-		
+
 		// This is because I work on a remote machine masteruri has the roscore machine
 		// IP and host is the local IP
 		URI masteruri = URI.create("http://127.0.0.1:11311");

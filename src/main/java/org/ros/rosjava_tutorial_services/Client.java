@@ -42,7 +42,7 @@ public class Client extends AbstractNodeMain {
 	public void onStart(final ConnectedNode connectedNode) {
 		final Log log = connectedNode.getLog();
 		ServiceClient<rosjava_test_msgs.AddTwoIntsRequest, rosjava_test_msgs.AddTwoIntsResponse> serviceClient = null;
-		while(serviceClient == null) {
+		while (serviceClient == null) {
 			try {
 				serviceClient = connectedNode.newServiceClient("add_two_ints", rosjava_test_msgs.AddTwoInts._TYPE);
 			} catch (ServiceNotFoundException e) {
